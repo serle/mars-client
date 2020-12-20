@@ -33,6 +33,15 @@
     align-items: center;
 }
 
+.result-report__error {
+    font-size: 1.5rem;
+    font-weight: normal;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: red;
+}
+
 .result-report__list {
     width: 100%;
     padding-left: 1rem;

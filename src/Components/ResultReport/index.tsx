@@ -7,8 +7,8 @@ import robotReportQuery, {RobotReport} from "../../State/robotReport";
 
 //renders the reportState
 function render(reportState:RobotReport) {
-    if (reportState.error) return <div className="result-report__error">{reportState.error}</div>
-    if (reportState.data.length === 0) return <div className="result-report__empty">Awaiting instructions...</div>
+    if (reportState.error || !reportState.data) return <div className="result-report__error">{reportState.error?.endsWith("404") ? "Solar storm, connection is spotty.." : reportState.error}</div>
+    if (reportState.data && reportState.data.length === 0) return <div className="result-report__empty">Awaiting instructions...</div>
 
     //note we can get away with using the index as a key as if anything changes the report gets destroyed and
     //we display to the waiting instructions notification above

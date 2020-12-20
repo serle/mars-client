@@ -6,7 +6,7 @@ import gridExtentState, {Extent} from "./gridExtent";
 import formLockState, {FormState} from "./formLock";
 
 export type RobotReport = {
-    data: string[]
+    data: string[] | null
     error: string | null
 }
 
@@ -63,19 +63,27 @@ const robotReportQuery = selector({
         const gridExtent = get(gridExtentState)
         const robotCommands = get(robotCommandState)
 
-        //DEBUG
-        //const command = requestToString(gridExtent, robotCommands);
-        //console.log(`About to send: ${command}`)
+        try {
+            //DEBUG
+            //const command = requestToString(gridExtent, robotCommands);
+            //console.log(`About to send: ${command}`)
 
-        //make the api request
-        const response = await axios.post(`http://localhost:8080/mars?command=${requestToString(gridExtent, robotCommands)}`);
+            //make the api request
+            const response = await axios.post(`/mars?command=${requestToString(gridExtent, robotCommands)}`);
+            //DEBUG
+            //const answer = responseToJson(response)
+            //console.log(`received: ${JSON.stringify(answer)}`)
 
-        //DEBUG
-        //const answer = responseToJson(response)
-        //console.log(`received: ${JSON.stringify(answer)}`)
-
-        //translate the api response to a nice useable json format
-        return responseToJson(response)
+            //translate the api response to a nice useable json format
+            return responseToJson(response)
+        }
+        catch (exception) {
+            console.error(exception)
+            return {
+                data: null,
+                error: exception.toString()
+            }
+        }
     },
 });
 
