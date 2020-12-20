@@ -8,5 +8,5 @@
   border-radius: 5px;
   background-color: bisque;
   grid-template-columns: 20rem 4fr;
-  grid-template-rows: 5.5rem max-content max-content 1fr max-content 6.5rem;
+  grid-template-rows: 5.5rem max-content max-content 1fr max-content minmax(6.5rem, max-content);
 }

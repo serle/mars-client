@@ -75,8 +75,6 @@ export function stringValue(value:string|null) : string {
 export function checkIntegerKey(event:React.KeyboardEvent<HTMLInputElement>) {
     const NUMBERS = /[0-9/]+/
 
-    console.log("validate")
-    console.log(event)
     if (!NUMBERS.test(event.key)) {
         event.preventDefault()
     }
@@ -118,8 +116,6 @@ export function handleIntegerChange(event:React.ChangeEvent<HTMLInputElement>,
 export function checkOrientationKey(event:React.KeyboardEvent<HTMLInputElement>) {
     const ORIENTATIONS = /[NSEWnsew/]+/
 
-    console.log("validate")
-    console.log(event)
     if (!ORIENTATIONS.test(event.key)) {
         event.preventDefault()
     }

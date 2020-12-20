@@ -9,7 +9,7 @@ export enum FormState {
 
 const formLock = atom({
     key: 'formLock',
-    default: FormState.DIRTY
+    default: FormState.CLEAN
 });
 
 export default formLock;

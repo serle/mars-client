@@ -1,16 +1,12 @@
 import React from 'react';
 import './CommandButtons.css';
-
-import axios from 'axios';
-import {useRecoilValue, useResetRecoilState} from "recoil";
+import {useRecoilValue, useResetRecoilState, useSetRecoilState} from "recoil";
 import gridExtentState from "../../State/gridExtent";
 import robotCommandsState from "../../State/robotCommands";
-
-
-const command = "5 3|1 1 E|RFRFRFRF||3 2 N|FRRFLLFFRRFLL||0 3 W|LLFFFLFLFL"
+import formLockState, {FormState} from "../../State/formLock";
 
 const CommandButtons = () => {
-    const gridExtent = useRecoilValue(gridExtentState);
+    const setFormLock = useSetRecoilState(formLockState)
     const robotCommands = useRecoilValue(robotCommandsState);
     const resetGridExtent = useResetRecoilState(gridExtentState);
     const resetRobotCommands = useResetRecoilState(robotCommandsState);
@@ -18,9 +14,11 @@ const CommandButtons = () => {
     const clear = () => {
         resetGridExtent();
         resetRobotCommands();
+        setFormLock(FormState.CLEAN)
     }
 
     const send = async () => {
+        setFormLock(FormState.DONE)
     }
 
     //both buttons are disabled if there are no commands to send

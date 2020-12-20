@@ -8,8 +8,8 @@ export type Extent = {
 const gridExtentState = atom({
     key: 'gridExtent',
     default: {
-        x: 5,
-        y: 3
+        x: 0,
+        y: 0
     }
 });
 

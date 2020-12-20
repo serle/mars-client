@@ -20,23 +20,7 @@ export type RobotCommand = {
 
 const robotCommandState = atom<RobotCommand[]>({
     key: 'robotCommands',
-    default: [
-        {
-            id: 1,
-            initialState: { x: 1, y: 1, o: Orientation.E },
-            instructions: "RFRFRFRF"
-        },
-        {
-            id: 2,
-            initialState: { x: 3, y: 2, o: Orientation.N },
-            instructions: "FRRFLLFFRRFLL"
-        },
-        {
-            id: 3,
-            initialState: { x: 0, y: 3, o: Orientation.W },
-            instructions: "LLFFFLFLFL"
-        }
-    ],
+    default: [],
 });
 
 export default robotCommandState

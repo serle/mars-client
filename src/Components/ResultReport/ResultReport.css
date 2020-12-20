@@ -3,27 +3,39 @@
     grid-row: 6 / 7;
 
     display: grid;
-    grid-template-columns: 1fr 5rem;
+    grid-template-columns: 15rem 1fr;
     grid-column-gap: 2rem;
     padding: 1rem 2rem;
     border-top: 1px solid grey;
 }
 
 .result-report__header {
-    font-size: 2rem;
-    font-weight: lighter;
-    vertical-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: 1px solid gainsboro;
 }
 
 
 .result-report__item {
-    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.result-report__empty {
+    font-size: 1.5rem;
+    font-weight: normal;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .result-report__list {
+    width: 100%;
     padding-left: 1rem;
     font-size: 1.2rem;
     font-weight: bold;
-    list-style: none;
-    border-right: 1px sold gainsboro;
 }
