@@ -1,0 +1,14 @@
+.command-header__state {
+    grid-column: 1 / 4;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.command-header__instructions {
+    grid-column: 4 / 5;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

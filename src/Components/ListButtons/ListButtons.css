@@ -1,0 +1,12 @@
+.list-buttons {
+    display: grid;
+    grid-template-columns: 4rem 6rem;
+    grid-template-rows: 1fr min-content;
+    grid-column-gap: 1.25rem;
+    padding: 1rem 1.5rem;
+}
+
+.list-buttons__button {
+    height: 3rem;
+    padding: 3px;
+}
