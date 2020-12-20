@@ -1,0 +1,13 @@
+.app-header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.app-header__title {
+    font-size: 3rem;
+    font-weight: 500;
+}
+

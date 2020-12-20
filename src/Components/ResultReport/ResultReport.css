@@ -1,0 +1,29 @@
+.result-report {
+    grid-column: 1 / -1;
+    grid-row: 6 / 7;
+
+    display: grid;
+    grid-template-columns: 1fr 5rem;
+    grid-column-gap: 2rem;
+    padding: 1rem 2rem;
+    border-top: 1px solid grey;
+}
+
+.result-report__header {
+    font-size: 2rem;
+    font-weight: lighter;
+    vertical-align: center;
+}
+
+
+.result-report__item {
+    display: inline-block;
+}
+
+.result-report__list {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    list-style: none;
+    border-right: 1px sold gainsboro;
+}

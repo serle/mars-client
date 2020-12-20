@@ -1,0 +1,12 @@
+.command-form {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  width: 100%;
+  height: 100%;
+  display: grid;
+  border-radius: 5px;
+  background-color: bisque;
+  grid-template-columns: 20rem 4fr;
+  grid-template-rows: 5.5rem max-content max-content 1fr max-content 6.5rem;
+}

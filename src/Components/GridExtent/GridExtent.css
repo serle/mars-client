@@ -1,0 +1,41 @@
+.grid-extent {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1rem;
+}
+
+.grid-extent__content {
+    grid-column: 2 / 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 1rem 0 1rem 0;
+}
+
+.grid-extent__label {
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 1rem;
+}
+
+.grid-extent__cross {
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.grid-extent__input {
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}

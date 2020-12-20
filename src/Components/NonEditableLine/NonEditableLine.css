@@ -1,0 +1,26 @@
+.non-edit-line__state {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.non-edit-line__instructions {
+    display: flex;
+    width: calc(100%);
+    height: 3rem;
+    font-size: 1.2rem;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+.non-edit-line__btn {
+    width: 100%;
+    height: 3rem;
+}
