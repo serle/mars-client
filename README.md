@@ -33,7 +33,7 @@ https://drive.google.com/file/d/1kv5QgC4UxavbqqDwA9AA58nCEfrRbwaR/view?usp=shari
 
 ## Usage Notes
 
-###UI
+### UI
 
 Once the UI loads you will be greeted with a simple command form. The first thing that
 you need to do is fill in the surface grid extent. This defines a planet wide grid system of
@@ -52,7 +52,7 @@ The robot report (api response) is displayed on the bottom panel and is cleared 
 the command data again after the previous response has been received. This is to ensure that
 if there is a robot report, it matches the non-editable command rows, to avoid any confusion.
 
-###API
+### API
 
 The server provides an api which provide the ability to post explorer instructions to one or more robots
 on the surface of Mars. The following is an example of a typical request.
@@ -91,7 +91,7 @@ returns: [R, F, L]
 It is anticipated that this limited set of instructions will be upgraded in the future and that
 the UI will use the API to initialize its allowable instruction set and validate against these.
 
-##Technical Debt
+## Technical Debt
 
 1) Comprehensive Unit and Integration testing on the front end
 2) Although I have used rem units throughout the layout, I have not added in media queries for 
