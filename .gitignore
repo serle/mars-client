@@ -7,9 +7,14 @@
 
 # testing
 /coverage
+/cypress/integration/samples
+/cypress/fixture
+/cypress/plugins
+/cypress/support
 
 # production
 /build
+/server
 
 # misc
 .DS_Store
