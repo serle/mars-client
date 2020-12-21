@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-/cypress/integration/samples
+/samples
 /cypress/fixture
 /cypress/plugins
 /cypress/support

@@ -39,7 +39,7 @@ context('API Tests', () => {
     })
 
     it('it errors if GridExtent.x not in range [0;50] or not a number', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it responds to GridExtent.y in range [0;50]', async () => {
@@ -52,69 +52,67 @@ context('API Tests', () => {
     })
 
     it('it errors if GridExtent.y not in range [0;50] or not a number', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
-
-    //and so on...
     it('it responds to InitialState.x in range [0;{gridExtent.x}]', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it errors if InitialState.x out of range [0;{gridExtent.x}] or not an integer', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it responds to InitialState.y in range [0;{gridExtent.x}]', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it errors if InitialState.y out of range [0;{gridExtent.x}] or not an integer', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it responds to InitialState.orienetation in range [N. S, E, W]', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it errors if InitialState.orientation not one of [N. S, E, W]', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it responds to Instructions if all characters one of [R. F, L]', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it errors if Instructions not all characters one of [R. F, L]', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it responds if all characters one of [R. F, L] and length in range [1;100]', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it errors if all characters one of [R. F, L] and length not in range [1;100]', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it errors if missing GridExtent', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it errors if missing a RobotCommand', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it errors if the RobotCommand is missing an InitialState', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it errors if the RobotCommand is missing an Instruction string', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
     it('it errors if there is not a blank line between successive RobotCommands', async () => {
-
+        throw new Error("test not implemented yet")
     })
 
 })
