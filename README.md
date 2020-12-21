@@ -113,6 +113,6 @@ Due to time constraints as well as a git issue:
    framework and a good looking UI, except for the buttons which can be easily swapped out with
    styled div's later.
 
-3) I would be happy to add either Cypress, Enzyme or RTL testing as required. I have left the
-   normal jest test unit testing files in the client repo to be filled out as needed.
+
+3) I have added Cypress test skeletons, most of which still need to be completed.
    
