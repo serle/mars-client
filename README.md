@@ -18,12 +18,12 @@ To run the project
    the packaged jar file from the following link:  
    
 
-https://drive.google.com/file/d/1kv5QgC4UxavbqqDwA9AA58nCEfrRbwaR/view?usp=sharing 
+   >https://drive.google.com/file/d/1kv5QgC4UxavbqqDwA9AA58nCEfrRbwaR/view?usp=sharing 
 
 
 3) Open a terminal to the directory where you download the jar file and enter the command
    
-   ####java -jar mars-explorer.jar 
+   >java -jar mars-explorer.jar 
 
 4) Open a browser on http://localhost:8080/ to open the application.
 
@@ -57,7 +57,7 @@ if there is a robot report, it matches the non-editable command rows, to avoid a
 The server provides an api which provide the ability to post explorer instructions to one or more robots
 on the surface of Mars. The following is an example of a typical request.
 
-POST: <URL:PORT>/mars?command="5 3|1 1 E|RFRFRFRF||3 2 N|FRRFLLFFRRFLL||0 3 W|LLFFFLFLFL"
+> POST: <URL:PORT>/mars?command="5 3|1 1 E|RFRFRFRF||3 2 N|FRRFLLFFRRFLL||0 3 W|LLFFFLFLFL"
 
 Note I have used the pipe delimiter instead of the newlines as they don't break the url string
 or require special encoding. I translate from pipe to newline on the outer most controller
@@ -78,13 +78,13 @@ The command parameter consist of:
 
 which returns the response:
 
-1 1 E|3 3 N LOST|2 3 S
+>1 1 E|3 3 N LOST|2 3 S
 
 
 In addition to the main POST end point, an experimental GET end point is provided to get
 the list of supported robot instructions.
 
-GET <URL:PORT>/mars
+>GET <URL:PORT>/mars
 
 returns: [R, F, L]
 
